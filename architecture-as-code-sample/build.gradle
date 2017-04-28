@@ -1,0 +1,16 @@
+group 'medical'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'base'
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+}
